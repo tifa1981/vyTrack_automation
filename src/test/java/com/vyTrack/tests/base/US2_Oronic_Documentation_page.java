@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class US2_Oronic_Documentation_page {
+
     @Test
     public void Oronic_Documentation_page() throws InterruptedException {
         VytrackUtils.loginAsSalesManager();
