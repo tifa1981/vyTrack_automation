@@ -8,12 +8,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class US2_Oronic_Documentation_page {
-
-
     @Test
     public void Oronic_Documentation_page() throws InterruptedException {
         VytrackUtils.loginAsSalesManager();
-
 
         WebElement QuestionMark = Driver.getDriver().findElement(By.xpath("//i[@class='fa-question-circle']"));
         System.out.println("Driver.getDriver().getTitle() = " + Driver.getDriver().getTitle());
@@ -29,9 +26,7 @@ public class US2_Oronic_Documentation_page {
         System.out.println("currentpage = " + currentpage);
 
         Boolean isDisplay = Driver.getDriver().findElement(By.tagName("h1")).isDisplayed();
-
         Assert.assertTrue(isDisplay);
-
     }
 }
 
