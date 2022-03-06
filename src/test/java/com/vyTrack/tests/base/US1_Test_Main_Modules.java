@@ -17,6 +17,7 @@ public class US1_Test_Main_Modules extends TestBase {
 
     // create a data provider method with 3 sets of given data (username and list of modules), return new Object 2-D arrays
     // verify the expected title with actual title
+
     @DataProvider(name = "data_provider")
     public Object [][] dataProviderMethod(){
         return new Object[][]{
