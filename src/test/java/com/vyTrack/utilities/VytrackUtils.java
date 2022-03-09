@@ -7,7 +7,7 @@ public class VytrackUtils {
     public static void login(String username){
         String password = "UserUser123";
         // go to website
-        Driver.getDriver().get(ConfigurationReader.getProperty("env1"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("env2"));
         // pass username
         // Driver.getDriver().findElement(By.cssSelector("#prependedInput"));
         Driver.getDriver().findElement(By.id("prependedInput")).sendKeys(username);

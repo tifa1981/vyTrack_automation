@@ -6,16 +6,12 @@ import com.vyTrack.utilities.Driver;
 import com.vyTrack.utilities.VytrackUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
-public class US11_VehicleOdometer_3Roles extends TestBase{
+public class US11_VehicleOdometer_Driver extends TestBase{
 
     @DataProvider(name = "driver_data_provider")
     public Object [][] dataProviderMethod(){
@@ -32,12 +28,12 @@ public class US11_VehicleOdometer_3Roles extends TestBase{
         BrowserUtils.sleep(2);
 
         WebElement fleetMenu= Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[1]"));
-       // System.out.println("fleetMenu.getText() = " + fleetMenu.getText());
+        // System.out.println("fleetMenu.getText() = " + fleetMenu.getText());
         fleetMenu.click();
         BrowserUtils.sleep(2);
 
         WebElement vehicleOdometer= Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-2'])[2]"));
-       // System.out.println("vehicleOdometer.getText() = " + vehicleOdometer.getText());
+        // System.out.println("vehicleOdometer.getText() = " + vehicleOdometer.getText());
         vehicleOdometer.click();
         BrowserUtils.sleep(2);
 
@@ -50,13 +46,5 @@ public class US11_VehicleOdometer_3Roles extends TestBase{
         System.out.println("number25.getText() = " + number25.getText());
         Assert.assertTrue(number25.isDisplayed());
 
-
-
-
-
-
-
     }
 }
-
-
