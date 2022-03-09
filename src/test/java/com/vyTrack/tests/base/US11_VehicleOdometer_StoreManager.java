@@ -21,8 +21,6 @@ public class US11_VehicleOdometer_StoreManager extends TestBase {
         };
     }
 
-    ;
-
     @Test(dataProvider = "storeManager_data_provider")
     public void Locating_Vehicle_Odometer(String username) throws InterruptedException {
         VytrackUtils.login(ConfigurationReader.getProperty(username));
