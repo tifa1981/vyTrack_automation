@@ -17,9 +17,9 @@ public class US_4_Vehicle_Contracts_Page {
         //  fleetPage.click();
         Actions act = new Actions(Driver.getDriver());
         WebElement fleetPage = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[2]"));
-        WebElement webEle = Driver.getDriver().findElement(By.xpath("(//li[@class='dropdown-menu-single-item']//span)[4]"));
+       WebElement webEle = Driver.getDriver().findElement(By.xpath("(//a[@href='/entity/Extend_Entity_VehicleContract'])[3]//span"));
         Thread.sleep(2000);
-        act.moveToElement(fleetPage).moveToElement(webEle).click().perform();
+    act.moveToElement(fleetPage).moveToElement(webEle).click().perform();
 
         //     System.out.println("webEle.getText() = " + webEle.getText());
         Thread.sleep(2000);
@@ -28,8 +28,9 @@ public class US_4_Vehicle_Contracts_Page {
         System.out.println("Driver.getDriver().getTitle() = " + Driver.getDriver().getTitle());
 
         // Assert.assertEquals(currentTitle,expectedTitle);
-        // Fail : Actual   :All - Vehicle Costs - Entities - System - Car - Entities - System
+        // Fail : Actual   :
         //"Fail : Expected :All - Vehicle Contract - Entities - System - Car - Entities - System"
+     //   Driver.closeDriver();
     }
 
 
@@ -40,7 +41,8 @@ public class US_4_Vehicle_Contracts_Page {
         //  fleetPage.click();
         Actions act = new Actions(Driver.getDriver());
         WebElement fleetPage = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[2]"));
-        WebElement webEle = Driver.getDriver().findElement(By.xpath("(//li[@class='dropdown-menu-single-item']//span)[4]"));
+        WebElement webEle = Driver.getDriver().findElement(By.xpath("(//a[@href='/entity/Extend_Entity_VehicleContract'])[3]//span"));
+        Thread.sleep(2000);
         Thread.sleep(2000);
         act.moveToElement(fleetPage).moveToElement(webEle).click().perform();
 
@@ -53,6 +55,7 @@ public class US_4_Vehicle_Contracts_Page {
         // Assert.assertEquals(currentTitle,expectedTitle);
         // Fail : Actual   :All - Vehicle Costs - Entities - System - Car - Entities - System
         //"Fail : Expected :All - Vehicle Contract - Entities - System - Car - Entities - System"
+        Driver.closeDriver();
     }
 
     @Test
