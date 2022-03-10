@@ -5,6 +5,7 @@ import com.vyTrack.utilities.VytrackUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class US_4_Vehicle_Contracts_Page {
@@ -27,10 +28,9 @@ public class US_4_Vehicle_Contracts_Page {
         String currentTitle = Driver.getDriver().getTitle();
         System.out.println("Driver.getDriver().getTitle() = " + Driver.getDriver().getTitle());
 
-        // Assert.assertEquals(currentTitle,expectedTitle);
-        // Fail : Actual   :
-        //"Fail : Expected :All - Vehicle Contract - Entities - System - Car - Entities - System"
-     //   Driver.closeDriver();
+        Assert.assertEquals(currentTitle,expectedTitle);
+
+       Driver.closeDriver();
     }
 
 
@@ -52,9 +52,8 @@ public class US_4_Vehicle_Contracts_Page {
         String currentTitle = Driver.getDriver().getTitle();
         System.out.println("Driver.getDriver().getTitle() = " + Driver.getDriver().getTitle());
 
-        // Assert.assertEquals(currentTitle,expectedTitle);
-        // Fail : Actual   :All - Vehicle Costs - Entities - System - Car - Entities - System
-        //"Fail : Expected :All - Vehicle Contract - Entities - System - Car - Entities - System"
+         Assert.assertEquals(currentTitle,expectedTitle);
+
         Driver.closeDriver();
     }
 
