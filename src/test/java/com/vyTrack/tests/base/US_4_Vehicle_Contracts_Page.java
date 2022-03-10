@@ -17,7 +17,7 @@ public class US_4_Vehicle_Contracts_Page {
         //  fleetPage.click();
         Actions act = new Actions(Driver.getDriver());
         WebElement fleetPage = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[2]"));
-        WebElement webEle = Driver.getDriver().findElement(By.xpath("(//li[@class='dropdown-menu-single-item']//span)[3]"));
+        WebElement webEle = Driver.getDriver().findElement(By.xpath("(//li[@class='dropdown-menu-single-item']//span)[4]"));
         Thread.sleep(2000);
         act.moveToElement(fleetPage).moveToElement(webEle).click().perform();
 
@@ -40,7 +40,7 @@ public class US_4_Vehicle_Contracts_Page {
         //  fleetPage.click();
         Actions act = new Actions(Driver.getDriver());
         WebElement fleetPage = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[2]"));
-        WebElement webEle = Driver.getDriver().findElement(By.xpath("(//li[@class='dropdown-menu-single-item']//span)[3]"));
+        WebElement webEle = Driver.getDriver().findElement(By.xpath("(//li[@class='dropdown-menu-single-item']//span)[4]"));
         Thread.sleep(2000);
         act.moveToElement(fleetPage).moveToElement(webEle).click().perform();
 
