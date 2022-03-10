@@ -46,7 +46,7 @@ public class US_4_Vehicle_Contracts_Page {
         Thread.sleep(2000);
         act.moveToElement(fleetPage).moveToElement(webEle).click().perform();
 
-        //     System.out.println("webEle.getText() = " + webEle.getText());
+        System.out.println("webEle.getText() = " + webEle.getText());
         Thread.sleep(2000);
         String expectedTitle = "All - Vehicle Contract - Entities - System - Car - Entities - System";
         String currentTitle = Driver.getDriver().getTitle();
